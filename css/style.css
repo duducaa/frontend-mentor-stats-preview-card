@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+.cartao {
+    background-color: var(--dark-desaturated-blue-card);
+    border-radius: 10px;
+    width: 88%;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+.cartao .foto {
+    position: relative;
+}
+
+.foto > img {
+    width: 100%;
+}
+
+.cartao .filtro {
+    background-color: var(--soft-transparent-violet-accent);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.cartao .img-cabecalho-d {
+    display: none;
+}
+
+.cartao .img-cabecalho-m {
+    display: block;
+}
+
+.cartao .container {
+    text-align: center;
+    padding: 16% 10% 10%;
+}
+
+.cartao .titulo {
+    color: white;
+    font-weight: 700;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin-bottom: 6%;
+}
+
+.cartao .titulo span {
+    color: var(--soft-violet-accent);
+}
+
+.cartao .descricao {
+    color: var(--slightly-transparent-white-075);
+    line-height: 1.8em;
+    margin-bottom: 20%;
+}
+
+.cartao .estatisticas {
+    display: flex;
+    flex-flow: column;
+}
+
+.cartao .estatisticas .estatisticas-item {
+    margin-bottom: 12%;
+}
+
+.cartao .estatisticas .estatisticas-item:last-child {
+    margin-bottom: 0;
+}
+
+.cartao .estatisticas .estatisticas-numero {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.cartao .estatisticas .estatisticas-nome {
+    color: var(--slightly-transparent-white-060);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca';
+    font-size: .8em;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 1440px) {
+    .cartao {
+        width: 80%;
+        flex-flow: row-reverse;
+    }
+
+    .cartao .foto {
+        width: 50%;
+    }
+
+    .cartao .img-cabecalho-m {
+        display: none;
+    }
+
+    .cartao .img-cabecalho-d {
+        display: block;
+    }
+
+    .cartao .container {
+        width: 50%;
+        text-align: left;
+        padding: 7% 14% 0% 6%;
+    }
+
+    .cartao .titulo {
+        font-size: 2.4em;
+    }
+
+    .cartao .estatisticas {
+        flex-direction: row;
+    }
+
+    .cartao .estatisticas .estatisticas-item {
+        margin-right: 18%;
+    }
+
+    .cartao .estatisticas .estatisticas-numero {
+        margin-bottom: 10%;
+    }
+}
